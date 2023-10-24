@@ -17,7 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}   
+    
 
 .logo {
     display: flex;
@@ -92,9 +93,10 @@ header {
 }
 
 
+
 /* CROCHET PRODUCTS SECTION */
 .home{
-    height: 100vh;
+    height: 130vh;
 }
 
 .title{
@@ -112,7 +114,7 @@ header {
     color: #33241b;
 }
 
-.product-container{
+.product-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -123,12 +125,13 @@ header {
 .product-card {
     width: 150px;
     height: 200px;
+    position: relative;
+    margin-bottom: 20px; /* Add margin to separate product cards */
 }
 
-.product-card img{
+.product-card img {
     width: 100%;
 }
-
 
 .shadow {
     width: 150px;
@@ -139,6 +142,7 @@ header {
     border-radius: 50px;
     opacity: 8%;
 }
+
 
 .product-name {
     position: absolute;
@@ -181,7 +185,6 @@ header {
     .menu a {
         font-size: 6px;
     }
-
 
     .welcome-text-container{
         top: 20%;
