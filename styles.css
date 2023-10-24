@@ -92,8 +92,6 @@ header {
     transition: 500ms;
 }
 
-
-
 /* CROCHET PRODUCTS SECTION */
 .home{
     height: 130vh;
@@ -118,15 +116,17 @@ header {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 8% 20% 0 20%;
+    justify-content: space-evenly;
+    padding: 4% 20% 0 20%;
+    transition: 1s;
 }
 
 .product-card {
     width: 150px;
     height: 200px;
     position: relative;
-    margin-bottom: 20px; /* Add margin to separate product cards */
+    margin: 0px 50px 60px 50px;
+    transition: 1s;
 }
 
 .product-card img {
@@ -171,6 +171,7 @@ header {
 
 
 
+/* RESPONSIVENESS */
 @media only screen and (max-width: 540px) {
     
     .logo img {
@@ -211,7 +212,6 @@ header {
     
     /* CROCHET PRODUCTS SECTION */
     
-    
     .title img{
         width: 300px;
     }
@@ -219,19 +219,16 @@ header {
     .product-container{
         justify-content: center;
         margin: 40px;
-    }
-    
+    }    
+   
     .product-card {
-        width: 200px;
-        height: 250px;
-        margin-bottom: 100px;
+        width: 150px;
+        height: 200px;
+        position: relative;
+        margin: 0;
     }
     
-    .product-card p{
-        display: none;
-    }
 }
-
 @media only screen and (max-width: 800px) and (min-width: 540px) {
  
     .menu a {
