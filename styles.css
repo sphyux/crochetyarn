@@ -6,11 +6,20 @@
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 header {
-    background-color: #33241b;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
+    background-color: #1f1814; /* Customize the header background color */
+    color: #fff; /* Customize the text color */
+    position: fixed; /* Fix the header position */
+    top: 0; /* Stick it at the top of the viewport */
+    width: 100%; /* Make it full width */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 10px 0; /* Adjust padding as needed */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the bottom */
 }
 
 .navbar {
@@ -43,12 +52,14 @@ header {
 
 .menu a {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     transition: 500ms;
 }
 
 .menu a:hover {
-    text-decoration: underline;
+    background-color: white;
+    padding: 5px;
+    color: #33241b;
 }
 
 .welcome-page{
@@ -92,18 +103,15 @@ header {
     transition: 500ms;
 }
 
+
 /* CROCHET PRODUCTS SECTION */
-.home{
-    height: 130vh;
-}
 
 .title{
     text-align: center;
 }
 
-
 .title img{
-    margin-top: 30px;
+    margin-top: 80px;
     width: 500px;
   }
 
@@ -127,6 +135,7 @@ header {
     position: relative;
     margin: 0px 50px 60px 50px;
     transition: 1s;
+    cursor: pointer;
 }
 
 .product-card img {
@@ -141,8 +150,8 @@ header {
     background-color: black;
     border-radius: 50px;
     opacity: 8%;
+    
 }
-
 
 .product-name {
     position: absolute;
@@ -158,6 +167,7 @@ header {
     border-radius: 30px;
     justify-content: center; /*align text center on the shadow box*/
     align-items: center;
+    cursor: pointer;
 }
 
 .product-card:hover .product-name {
@@ -166,25 +176,148 @@ header {
 
 .product-name label {
     font-weight: bold;
-    text-align: center; /* Center the text within the label */
+    text-align: center; 
+    cursor: pointer;
+}
+
+#contact{
+    background-color: #33241b;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;  /*magin bottom of contact us*/
+    
+}
+
+form {
+    text-align: left;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #33241b;
+    font-weight: bold;
+}
+
+button {
+    background-color:#00000027;
+    color: #fff;
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #33241b;
+    font-weight: bold;
+}
+
+
+.contact-form h6{
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+.ig-account a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ig-account i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.ig-account p.ig-un {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 
 
-/* RESPONSIVENESS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color:#33241be3; /* Customize the footer background color */
+    color: #fff; /* Customize the text color */
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-content {
+    max-width: 1200px; /* Adjust the maximum width of the footer content */
+    margin: 0 ;/* Center the footer content horizontally */
+    font-size: 12px;
+}
+
+
+
 @media only screen and (max-width: 540px) {
     
     .logo img {
         width: 120px;
-    
     }
     
     .menu li {
-        margin-right: 10px;
+        margin-right: 8px;
     }
     
     .menu a {
-        font-size: 6px;
+        font-size: 10px;
     }
 
     .welcome-text-container{
@@ -229,6 +362,7 @@ header {
     }
     
 }
+
 @media only screen and (max-width: 800px) and (min-width: 540px) {
  
     .menu a {
