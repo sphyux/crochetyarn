@@ -81,7 +81,7 @@ header {
 
 .welcome-text-container{
     position: relative;
-    top: 35%;
+    top: 40%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +102,39 @@ header {
     transform: scale(1.1);
     transition: 500ms;
 }
+
+/* .welcome-text-container p{
+    position: relative;
+    top: 20px;
+    left: 5px;
+    width: 690px;
+    text-align: justify;
+    font-size: 16px;
+} */
+
+
+/* .button{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 600px;
+    padding: 6px 20px 6px 20px;
+    font-size: 14px;
+    box-shadow: 0px 0px 1px white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: 100ms;
+    
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 4px rgb(77, 77, 77);
+} */
 
 
 /* CROCHET PRODUCTS SECTION */
@@ -153,6 +186,18 @@ header {
     
 }
 
+/* .shadow:hover {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 3px;
+    border: 1px solid #33241b;
+    background-color: black;
+    border-radius: 30px;
+    opacity: 50%;
+    cursor: pointer;
+} */
+
 .product-name {
     position: absolute;
     width: 140px;
@@ -180,9 +225,53 @@ header {
     cursor: pointer;
 }
 
-#contact{
+
+
+
+
+
+
+
+
+/* ABOUT US SECTION */
+#about-us {
     background-color: #33241b;
+    height: 100vh;
 }
+
+.about-us-container{
+    padding: 60px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-us-container h2{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.about-content {
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT SECTION */
 
 .contact-form {
     max-width: 600px;
@@ -193,10 +282,14 @@ header {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 20px;
     margin-bottom: 20px;  /*magin bottom of contact us*/
-    
+    color: #33241b;
+}
+
+.contact-form label{
+    color: #33241b;
 }
 
 form {
@@ -217,18 +310,19 @@ textarea {
 }
 
 button {
-    background-color:#00000027;
-    color: #fff;
+    background-color:#0000001c;
+    color:#33241b;
     margin-top: 20px;
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 button:hover {
-    background-color: #ffffff;
-    color: #33241b;
+    background-color:#33241b;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -236,6 +330,7 @@ button:hover {
 .contact-form h6{
     margin-top: 50px;
     font-size: 14px;
+    color: #33241b;
 }
 
 
@@ -248,12 +343,18 @@ button:hover {
 .ig-account i {
     font-size: 24px;
     margin-right: 10px;
+    color: #33241b;
 }
 
 .ig-account p.ig-un {
     font-size: 16px;
-    font-weight: bold;
+   
     white-space: nowrap; /* Prevent text from wrapping */
+    color: #33241b;
+}
+.ig-account p.ig-un:hover {
+    text-decoration: underline;
+    
 }
 
 
@@ -300,9 +401,37 @@ footer {
 
 .footer-content {
     max-width: 1200px; /* Adjust the maximum width of the footer content */
-    margin: 0 ;/* Center the footer content horizontally */
+    margin: 0 auto;/* Center the footer content horizontally */
     font-size: 12px;
 }
+
+
+
+
+/* footer {
+    background-color:#33241b;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Style the link for the contact email */
+/* .footer a {
+    color: #fff;
+    text-decoration: none;
+} */ 
 
 
 
@@ -360,7 +489,21 @@ footer {
         position: relative;
         margin: 0;
     }
+
+    #about-us {
+        background-color: #33241b;
+        height: 100%;
+        padding-bottom: 100px;
+    }
     
+    .about-us-container{
+        padding: 60px 30px 0px 30px;
+    }
+    
+    .about-content {
+        font-size: 12px;
+        
+    }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 540px) {
