@@ -129,36 +129,42 @@ header {
     width: 100%;
 }
 
-.product-card p{
+
+.shadow {
     width: 150px;
     height: 70px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     background-color: black;
     border-radius: 50px;
-    opacity: 10%;
+    opacity: 8%;
 }
 
-.product-name:hover{
-    width: 150px;
-    height: 100px; 
+.product-name {
     position: absolute;
-    bottom:3px;
-    border: 1px solid #33241b;
-    background-color: black;
-    border-radius: 30px;  
-    opacity: 50%;
-    cursor: pointer;
-   
+    width: 140px;
+    height: 100px;  
+    bottom: 10px;
+    left: 0;
+    z-index: 2;
+    color: white;
+    display: none; /* Hide the product name by default */
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    justify-content: center; /*align text center on the shadow box*/
+    align-items: center;
 }
 
-.product-name h5{
-    position: relative;
-    text-align: center;
-    padding: 40px 0px 40px 0px;
-    opacity: 100%;
-    z-index: 1
+.product-card:hover .product-name {
+    display: flex; /* Show the product name on hover */
 }
+
+.product-name label {
+    font-weight: bold;
+    text-align: center; /* Center the text within the label */
+}
+
 
 
 @media only screen and (max-width: 540px) {
