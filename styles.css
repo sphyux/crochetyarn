@@ -5,12 +5,9 @@
     text-decoration: none;
     color: white;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
-
 header {
     background-color: #1f1814; /* Customize the header background color */
     color: #fff; /* Customize the text color */
@@ -21,47 +18,38 @@ header {
     padding: 10px 0; /* Adjust padding as needed */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the bottom */
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}   
-    
-
+}      
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo img {
     width: 170px;
     margin-left: 10px;
 
 }
-
 .menu {
     list-style: none;
     padding: 0;
     display: flex;
 }
-
 .menu li {
     margin-right: 20px;
 }
-
 .menu a {
     font-weight: bold;
     font-size: 14px;
     transition: 500ms;
 }
-
 .menu a:hover {
     background-color: white;
     padding: 5px;
     color: #33241b;
 }
-
 .welcome-page{
     width: 100%;
     height: 100vh;
@@ -70,7 +58,6 @@ header {
     background-size: cover;
     background-attachment: fixed; /*fixed na covered entire element*/
 }
-
 .welcome-page::before {   /*overlay design*/
     content: " ";
     position: absolute;
@@ -78,7 +65,6 @@ header {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8); 
 }
-
 .welcome-text-container{
     position: relative;
     top: 40%;
@@ -87,7 +73,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .welcome-text-container h1{
     position: relative;
     font-size: 60px;
@@ -97,62 +82,24 @@ header {
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5); /*hori, verti, blur*/
     transition: 500ms;
 }
-
 .welcome-text-container h1:hover{
     transform: scale(1.1);
     transition: 500ms;
 }
 
-/* .welcome-text-container p{
-    position: relative;
-    top: 20px;
-    left: 5px;
-    width: 690px;
-    text-align: justify;
-    font-size: 16px;
-} */
-
-
-/* .button{
-    position: relative;
-    top: 100px;
-    display: flex;
-    justify-content: center;
-    margin: 0 600px;
-    padding: 6px 20px 6px 20px;
-    font-size: 14px;
-    box-shadow: 0px 0px 1px white;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: 100ms;
-    
-}
-
-.button:hover {
-    transform: scale(1.1);
-    background-color: white;
-    color: black;
-    box-shadow: 0px 0px 4px rgb(77, 77, 77);
-} */
-
 
 /* CROCHET PRODUCTS SECTION */
-
 .title{
     text-align: center;
 }
-
 .title img{
     margin-top: 80px;
     width: 500px;
   }
-
 .title h4 {
     margin-top: -10px;
     color: #33241b;
 }
-
 .product-container {
     position: relative;
     display: flex;
@@ -161,7 +108,6 @@ header {
     padding: 4% 20% 0 20%;
     transition: 1s;
 }
-
 .product-card {
     width: 150px;
     height: 200px;
@@ -170,11 +116,9 @@ header {
     transition: 1s;
     cursor: pointer;
 }
-
 .product-card img {
     width: 100%;
 }
-
 .shadow {
     width: 150px;
     height: 70px;
@@ -185,19 +129,6 @@ header {
     opacity: 8%;
     
 }
-
-/* .shadow:hover {
-    width: 150px;
-    height: 100px;
-    position: absolute;
-    bottom: 3px;
-    border: 1px solid #33241b;
-    background-color: black;
-    border-radius: 30px;
-    opacity: 50%;
-    cursor: pointer;
-} */
-
 .product-name {
     position: absolute;
     width: 140px;
@@ -214,20 +145,34 @@ header {
     align-items: center;
     cursor: pointer;
 }
-
 .product-card:hover .product-name {
     display: flex; /* Show the product name on hover */
 }
-
 .product-name label {
     font-weight: bold;
     text-align: center; 
     cursor: pointer;
 }
-
-
-
-
+.get-yours-btn{
+    background-color:#33241bdc;
+    color:#ffffff;
+    margin:30px 30%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+    
+}
+.get-yours-btn:hover{
+    background-color:#33241b;
+    color: #ffffff;
+}
 
 
 
@@ -238,7 +183,6 @@ header {
     background-color: #33241b;
     height: 100vh;
 }
-
 .about-us-container{
     padding: 60px 50px 0px 50px;
     display: flex;
@@ -249,7 +193,6 @@ header {
     color: #ffffff;
     font-size: 35px;
 }
-
 .about-content {
     padding: 20px;
     text-align: justify;
@@ -258,21 +201,7 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT SECTION */
-
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -280,23 +209,18 @@ header {
     text-align: center;
     
 }
-
 h2 {
     font-size: 35px;
     margin-top: 20px;
     margin-bottom: 20px;  /*magin bottom of contact us*/
     color: #33241b;
 }
-
 .contact-form label{
     color: #33241b;
 }
-
 form {
     text-align: left;
 }
-
-
 input,
 textarea {
     width: 100%;
@@ -308,7 +232,6 @@ textarea {
     color: #33241b;
     font-weight: bold;
 }
-
 button {
     background-color:#0000001c;
     color:#33241b;
@@ -319,33 +242,26 @@ button {
     cursor: pointer;
     
 }
-
 button:hover {
     background-color:#33241b;
     color: #ffffff;
     font-weight: bold;
 }
-
-
 .contact-form h6{
     margin-top: 50px;
     font-size: 14px;
     color: #33241b;
 }
-
-
 .ig-account a {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-
 .ig-account i {
     font-size: 24px;
     margin-right: 10px;
     color: #33241b;
 }
-
 .ig-account p.ig-un {
     font-size: 16px;
    
@@ -360,45 +276,13 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color:#33241be3; /* Customize the footer background color */
     color: #fff; /* Customize the text color */
     text-align: center;
     padding: 5px;
+    margin-top: 100px;
 }
-
 .footer-content {
     max-width: 1200px; /* Adjust the maximum width of the footer content */
     margin: 0 auto;/* Center the footer content horizontally */
@@ -406,36 +290,17 @@ footer {
 }
 
 
-
-
-/* footer {
-    background-color:#33241b;
-    color: #fff;
-    padding: 1px 0;
-    text-align: center;
+/* RESPONSIVENESS */
+@media only screen and (max-width: 395px)  {
+ 
+    .menu a, 
+    .shadow,
+    .product-card:hover .product-name  {
+        display: none;
+    }
 }
-
-.footer-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 14px;
-    text-align: center;
-}
-
-/* Style the link for the contact email */
-/* .footer a {
-    color: #fff;
-    text-decoration: none;
-} */ 
-
-
-
-@media only screen and (max-width: 540px) {
+    
+@media only screen and (max-width: 480px) {
     
     .logo img {
         width: 120px;
@@ -505,8 +370,7 @@ footer {
         
     }
 }
-
-@media only screen and (max-width: 800px) and (min-width: 540px) {
+@media only screen and  (min-width: 480px)and(max-width: 800px)  {
  
     .menu a {
         font-size: 11px;

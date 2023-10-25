@@ -1,0 +1,184 @@
+.nav-products {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 9px;
+    bottom: 0;
+}   
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.nav-menu li {
+    margin-left: 10px;
+}
+.nav-menu a {
+    font-weight: bold;
+    font-size: 8px;
+    transition: 500ms;
+}
+.nav-menu a:hover {
+    background-color: #39302beb;
+    padding: 1px 10px;
+    color: #ffffff;
+}
+
+#keychains h2,
+#characters h2,
+#accessories h2{
+  max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 8% 5% 5% 5%;
+    
+}
+.prod-container{
+    border: 1px solid #3a2618ff;
+    background-color: #9a8873ff;
+    border-radius: 30px;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 2%;
+    margin-bottom: 30%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+.photo {
+    position: absolute;
+    top: -50px;
+    bottom: 100%;
+   
+    max-width: 250px;
+    min-height: 280px;
+    box-shadow: 0px 0px 10px #171614ff;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.photo:hover{
+    transform: scale(1.1);
+}
+.prod-container h3{ /* product name */
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.product-description{
+    position: absolute;
+    bottom: 45px;
+    padding: 0 20px;
+    text-align: justify;
+    font-size: 100%;
+}
+.product-footer{
+    position:absolute;
+    bottom: 0;
+    left: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 80%;
+    line-height: 1;
+    letter-spacing: 1px;
+    opacity: 40%;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 768px){
+  .prod-container h3{ /* product name */
+    top: 53%;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+  }
+  .product-description{
+      bottom: 55px;
+  }
+  .product-footer{
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 999px){
+  .prod-container h3{ /* product name */
+    top: 53%;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+  }
+  .product-description{
+      bottom: 55px;
+  }
+  .product-footer{
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .nav-products{
+    right: 20px;
+  }
+  
+  #keychains h2, 
+  #characters h2,
+  #accessories h2{
+    font-size: 50px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+ }
+  
+  .prod-container{
+    min-height: 300px;
+    margin-bottom: 8%; 
+  }
+
+  .photo {
+    position: absolute;
+    top: -50px;
+    bottom: 100%;
+    left: 65px;
+    max-width: 250px;
+    min-height: 300px;
+    box-shadow: 0px 0px 10px #171614ff;
+  }
+
+  .prod-container h3{ /* product name */
+    top: 14%;
+    left: 356px;
+    width: 60%;
+    text-align: left;
+    font-size: 250%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.0); /*  no shadow */
+  
+  }
+  
+  .product-description{
+    top: 33%;
+    left: 359px;
+    width:56%;
+    padding-left: 0px;
+    padding-right: 30px;
+    font-size: 110%;
+  }
+  .product-footer{
+    bottom: 5%;
+    left: 359px;
+    width: 60%;
+  }
+  
+}
+
