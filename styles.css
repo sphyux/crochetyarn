@@ -181,10 +181,10 @@ header {
 /* ABOUT US SECTION */
 #about-us {
     background-color: #33241b;
-    height: 100vh;
+    min-height: 500px;
 }
 .about-us-container{
-    padding: 60px 50px 0px 50px;
+    padding: 60px 50px 100px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
